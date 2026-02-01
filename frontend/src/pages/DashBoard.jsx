@@ -15,7 +15,7 @@ export default function DashBoard() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  const API_URL = "http://localhost:3000/business/generate";
+  const API_URL = "https://high-level-to-low-level-architecture.onrender.com/business/generate";
 
   const generateSpec = async (reqText) => {
     if (!reqText.trim()) return;
@@ -194,3 +194,4 @@ function Card({ children }) {
     </div>
   );
 }
+
